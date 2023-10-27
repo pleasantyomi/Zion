@@ -1,6 +1,5 @@
 /* eslint-disable no-unused-vars */
-import round from '../../assets/image1.png'
-import web from '../../assets/metrix1.png#'
+import web from '../../assets/metrix1.png'
 
 const Hero = () => {
     return ( 
