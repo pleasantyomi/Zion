@@ -1,5 +1,5 @@
 /* eslint-disable react/no-unknown-property */
-import image from '../assets/background.webp'
+import image from '../../assets/Background.webp'
 
 const About = () => {
     return ( 

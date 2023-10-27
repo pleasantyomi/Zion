@@ -1,8 +1,13 @@
-import About from '../pages/About';
-import Hero from '../pages/Hero'
-import Branch from '../pages/Branch'
-import Events from '../pages/Events';
-import Worship from '../pages/Worship';
+import About from '../Pages/Homepage/About';
+import Hero from '../Pages/Homepage/Hero'
+import Branch from '../Pages/Homepage/Branch'
+import Events from '../Pages/Homepage/Events';
+import Contact from '../Pages/Homepage/Contact'
+import Blog from '../Pages/Homepage/Blog'
+import Giving from '../Pages/Homepage/Giving'
+import Testimony from '../Pages/Homepage/Testimony'
+import Worship from '../Pages/Homepage/Worship';
+import Meetings from '../Pages/Homepage/Meetings'
 
 const Container = () => {
     return ( 
@@ -11,6 +16,11 @@ const Container = () => {
             <About/>
             <Branch/>
             <Events/>
+            <Contact/>
+            <Blog/>
+            <Giving/>
+            <Testimony/>
+            <Meetings/>
             <Worship/>
         </div>
      );

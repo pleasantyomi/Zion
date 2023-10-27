@@ -9,7 +9,7 @@ const Header = () => {
                     <img className="w-auto lg:h-16 h-10 flex-shrink-0 flex-nowrap" src={logo}/>
                 </div>
 
-                <div className="hidden lg:flex items-center gap-6 font-semibold text-gray-600">
+                <div className="hidden lg:flex items-center gap-6 font-semibold text-sm text-gray-600">
                     <a>HOME</a>
                     <a>WHO WE ARE</a>
                     <a>WHAT WE DO</a>

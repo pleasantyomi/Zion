@@ -15,8 +15,15 @@ export default {
       },
 
       backgroundImage: {
-        'primary': "url('src/assets/worship.webp')"
-      }
+        'primary': "url('src/assets/worship.webp')",
+        'contact': "url('src/assets/bishop.webp')",
+      },
+
+      screens:{
+        'tablet' : '640px',
+        'laptop' : '1024px',
+        'mobile' : '375px'
+      },
     },
   },
   plugins: [],

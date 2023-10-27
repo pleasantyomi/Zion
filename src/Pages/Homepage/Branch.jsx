@@ -2,7 +2,7 @@
 
 const Branch = () => {
     return ( 
-      <div className="bg-VeryPaleBlue w-full py-20 my-20">
+      <div className="bg-VeryPaleBlue w-full py-20 mt-20 mb-10">
         <div className="grid gap-4">
             <div className="relative bg-blue-900 w-14 h-14 rounded-full mx-auto">
                 <svg className=" w-8 h-8 text-white absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" >
