@@ -2,6 +2,9 @@
 /* eslint-disable no-unused-vars */
 
 const Giving = () => {
+    const online = () =>{
+        alert("Coming soon!")
+    }
     return ( 
         <div>
             <div className="w-11/12 mx-auto h-fit laptop:py-20 py-14 laptop:px-14 px-5 bg-VeryPaleBlue rounded-xl my-14 shadow-md">
@@ -12,7 +15,7 @@ const Giving = () => {
                     </div>
 
                     <div>
-                        <button className="block bg-blue-900 text-white font-semibold text-md py-3 px-14 rounded-xl shadow-sm laptop:mx-0 mx-auto mt-5 laptop:mt-0">Pay Now</button>
+                        <button onClick={online} className="block bg-blue-900 text-white font-semibold text-md py-3 px-14 rounded-xl shadow-sm laptop:mx-0 mx-auto mt-5 laptop:mt-0">Pay Now</button>
                     </div>
                 </div>
 

@@ -2,6 +2,9 @@ import logo from '../assets/logonew.jpg'
 import Hamburger from './Hamburger'
 
 const Header = () => {
+    const online = () =>{
+        alert("Coming soon!")
+    }
     return ( 
         <div className="bg-white fixed w-[100%] z-10 py-[1rem] lg:px-12 px-5">
             <div className="flex justify-between items-center font-primary">
@@ -19,7 +22,7 @@ const Header = () => {
                 </div>
 
                 <div>
-                    <button className="hidden lg:block bg-blue-900 text-white transition-all font-semibold px-4 py-2 rounded-xl hover:bg-transparent hover:border-[1px] hover:border-blue-900  hover:text-blue-900">ONLINE GIVING</button>
+                    <button onClick={online} className="hidden lg:block bg-blue-900 text-white transition-all font-semibold px-4 py-2 rounded-xl hover:bg-transparent hover:border-[1px] hover:border-blue-900  hover:text-blue-900">ONLINE GIVING</button>
                 </div>
 
                 <div className="lg:hidden block">

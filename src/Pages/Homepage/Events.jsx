@@ -18,9 +18,9 @@ const Events = () => {
                 {events.map((eve) => (
                     <div key={eve.id}>
                         <div>
-                            <div className="relative bg-white shadow-md rounded-xl mobile:w-full  tablet:w-9/12 laptop:w-full mx-auto max-sm:lg:full lg:h-[50vh] sm:h-[35vh] h-[45vh] flex-nowrap flex-shrink-0">
+                            <div className="relative bg-white shadow-md rounded-xl mobile:w-full  tablet:w-9/12 laptop:w-full mx-auto max-sm:lg:full h-[22rem]  flex-nowrap flex-shrink-0">
                                 <div>
-                                   <img className="rounded-xl w-full lg:h-[50vh] sm:h-[35vh] h-[40vh] object-cover overflow-y-hidden" src={eve.image}/>
+                                   <img className="rounded-xl w-full lg:h-[22rem] object-cover overflow-y-hidden" src={eve.image}/>
                                 </div>
 
                                 <div className="absolute grid bg-white w-full lg:h-[25vh] h-[20vh] sm:h-[15vh] bottom-0 rounded-b-xl lg:px-5 px-2 py-6">

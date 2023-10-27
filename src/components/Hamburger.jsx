@@ -3,6 +3,9 @@ import './Hamburger.css'
 
 const Hamburger = () => {
     const [open, isOpen] = useState(false)
+    const online = () =>{
+        alert("Coming soon!")
+    }
 
     return ( 
         <div className="">
@@ -20,7 +23,7 @@ const Hamburger = () => {
                        <a>BLOG</a>
                        <a>EVENTS</a>
                        <a>CONTACT US</a>
-                       <button className="block bg-blue-900 text-white transition-all font-semibold w-7/12 py-2 rounded-xl hover:bg-transparent hover:border-[1px] hover:border-blue-900  hover:text-blue-900 ml-auto mr-auto">ONLINE GIVING</button>
+                       <button onClick={online} className="block bg-blue-900 text-white transition-all font-semibold w-7/12 py-2 rounded-xl hover:bg-transparent hover:border-[1px] hover:border-blue-900  hover:text-blue-900 ml-auto mr-auto">ONLINE GIVING</button>
                     </div>
                 </div>
         </div>

@@ -20,7 +20,7 @@ const Blog = () => {
                 {blogs.map((blog) => (
                     <div key={blog.id}>
                         <div>
-                            <div className="relative bg-white shadow-md shadow-gray-400 rounded-xl mobile:w-full  tablet:w-9/12 laptop:w-full mx-auto max-sm:lg:full lg:h-[70vh] h-[60vh] flex-nowrap flex-shrink-0 pt-5">
+                            <div className="relative bg-white shadow-md shadow-gray-400 rounded-xl mobile:w-full  tablet:w-9/12 laptop:w-full mx-auto max-sm:lg:full lg:h-[35rem] h-[30rem] flex-nowrap flex-shrink-0 pt-5">
                                 <div>
                                    <img className="rounded-xl w-10/12 h-2/6 mx-auto object-cover overflow-y-hidden" src={blog.image}/>
                                 </div>
