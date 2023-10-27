@@ -23,7 +23,7 @@ const Events = () => {
                                    <img className="rounded-xl w-full lg:h-[22rem] object-cover overflow-y-hidden" src={eve.image}/>
                                 </div>
 
-                                <div className="absolute grid bg-white w-full lg:h-[25vh] h-[20vh] sm:h-[15vh] bottom-0 rounded-b-xl lg:px-5 px-2 py-6">
+                                <div className="absolute grid bg-white w-full lg:h-[11rem] h-[11rem] sm:h-[15vh] bottom-0 rounded-b-xl lg:px-5 px-2 py-6">
                                     <h1 className="font-semibold text-2xl text-gray-600">{eve.theme}</h1>
                                     <p className="text-gray-400 text-lg">{eve.title}</p>
                                     <div className="flex items-center gap-2 text-gray-400">
