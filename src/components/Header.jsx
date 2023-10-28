@@ -1,6 +1,6 @@
 import logo from '../assets/logonew.jpg'
 import Hamburger from './Hamburger'
-
+import { Link } from 'react-router-dom'
 const Header = () => {
     const online = () =>{
         alert("Coming soon!")
@@ -8,17 +8,17 @@ const Header = () => {
     return ( 
         <div className="bg-white fixed w-[100%] z-10 py-[1rem] lg:px-12 px-5">
             <div className="flex justify-between items-center font-primary">
-                <div>
+                <Link to ="/">
                     <img className="w-auto lg:h-16 h-10 flex-shrink-0 flex-nowrap" src={logo}/>
-                </div>
+                </Link>
 
                 <div className="hidden lg:flex items-center gap-6 font-semibold text-sm text-gray-600">
-                    <a>HOME</a>
+                    <Link to="/">HOME</Link>
                     <a>WHO WE ARE</a>
                     <a>WHAT WE DO</a>
-                    <a>BLOG</a>
-                    <a>EVENTS</a>
-                    <a>CONTACT US</a>
+                    <Link to="/blog">BLOG</Link>
+                    <Link to="/event">EVENTS</Link>
+                    <Link to="/contact">CONTACT US</Link>
                 </div>
 
                 <div>

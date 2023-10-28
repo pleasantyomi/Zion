@@ -1,5 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 /* eslint-disable no-unused-vars */
+import { Link } from "react-router-dom";
 
 const Contact = () => {
     return ( 
@@ -11,9 +12,9 @@ const Contact = () => {
                         <p className="pt-3 text-md font-semibold text-gray-600">There are competent & Spirit filled Counsellors, Pastors & Ministers willing to speak with you at any time. Don't keep it all in, speak to someone now.</p>
                     </div>
 
-                    <div>
+                    <Link to ="/contact">
                         <button className="block bg-blue-900 text-white font-semibold text-md py-3 px-14 rounded-xl shadow-sm laptop:mx-0 mx-auto mt-5 laptop:mt-0">Contact us</button>
-                    </div>
+                    </Link>
                 </div>
 
             </div>

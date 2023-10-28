@@ -7,8 +7,8 @@ import convention from '../../assets/convention.jpg'
 const Events = () => {
     const [events, setEvents] = useState([
         {title: '15th National Convention', date: 'Wed. 8th - Sun. 10th November,2023 ', theme: 'By his stripes', location: 'Church Auditorium', image: convention, id: 1},
-        {title: '15th National Convention', date: 'Wed. 8th - Sun. 10th November,2023 ', theme: 'By his stripes', location: 'Church Auditorium', image: convention, id: 1},
-        {title: '15th National Convention', date: 'Wed. 8th - Sun. 10th November,2023 ', theme: 'By his stripes', location: 'Church Auditorium', image: convention, id: 1},
+        {title: '15th National Convention', date: 'Wed. 8th - Sun. 10th November,2023 ', theme: 'By his stripes', location: 'Church Auditorium', image: convention, id: 2},
+        {title: '15th National Convention', date: 'Wed. 8th - Sun. 10th November,2023 ', theme: 'By his stripes', location: 'Church Auditorium', image: convention, id: 3},
     ])
     return ( 
         <div>

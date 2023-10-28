@@ -1,5 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 /* eslint-disable no-unused-vars */
+import {Link} from 'react-router-dom'
 
 const Testimony = () => {
     return ( 
@@ -11,9 +12,9 @@ const Testimony = () => {
                         <p className="pt-3 text-md font-semibold text-gray-600">To share the testimonies of what God has done for you during any of our programs, kindly click here so it can be added to the online testimonies during the next Powernight Service.</p>
                     </div>
 
-                    <div>
+                    <Link to ="/testimony">
                         <button className="block bg-blue-900 text-white font-semibold text-md py-3 px-14 rounded-xl shadow-sm laptop:mx-0 mx-auto mt-5 laptop:mt-0">Click here</button>
-                    </div>
+                    </Link>
                 </div>
 
             </div>
