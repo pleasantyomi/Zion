@@ -19,7 +19,7 @@ const MainContact = () =>{
                     </div>
 
                     <div className="px-10 py-5 w-full">
-                        <h1 className="grid text-gray-600 text-xl leading-tight">
+                        <h1 className="font-secandary grid text-gray-600 text-xl leading-tight">
                             <span className="text-black">GET IN <span className="font-semibold">TOUCH</span></span>
                             <span className="text-base">24/7 We will answer your questions and problems.</span>   
                         </h1>

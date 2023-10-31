@@ -12,7 +12,7 @@ const Footer = () => {
             <div className="bg-VeryPaleBlue py-[2rem]">
                 <Link to="/" className="flex justify-center items-center gap-1 pb-5">
                     <img className="w-auto h-12" src={logo}/>
-                    <p className="grid leading-tight font-semibold text-blue-900">
+                    <p className="font-tetiary grid leading-tight font-semibold text-blue-900">
                         <span>ZION ASSEMBLY</span>
                         <span>CHURCH OF GOD, NIGERIA</span>
                     </p>

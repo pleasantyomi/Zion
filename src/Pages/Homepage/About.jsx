@@ -20,7 +20,7 @@ const About = () => {
                      </svg>
                     </div>
 
-                    <h1 class="text-xl font-bold mt-3 mb-4">Place Of Heaven</h1>
+                    <h1 class="font-secondary text-xl font-bold mt-3 mb-4">Place Of Heaven</h1>
                     <p class="text-gray-400">In ZACOG you will feel divinity, piety, goodness, faith or right beliefs.</p>
 
                 </div>
@@ -31,7 +31,7 @@ const About = () => {
                             <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
                         </svg>
                     </div>
-                    <h1 className="text-xl font-bold mt-3 mb-4">Study Bible</h1>
+                    <h1 className="font-secondary text-xl font-bold mt-3 mb-4">Study Bible</h1>
                     <p className="text-gray-400">Learn the Bible enhance your wisdom, give you boldness about your faith. </p>
                 </div>
             </div>

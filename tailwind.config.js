@@ -7,7 +7,11 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        'primary' : 'Sora'
+        'primary' : 'Sora',
+        'secondary' : 'Montserrat',
+        'tetiary' : 'Open Sans',
+        'other' : 'Poppins',
+
       },
 
       colors: {

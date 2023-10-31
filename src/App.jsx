@@ -1,10 +1,12 @@
-import Header from './components/Header.jsx'
-import Container from './components/Container.jsx'
-import Footer from './components/Footer.jsx'
+/* eslint-disable no-unused-vars */
+import Header from './components/Header'
+import Container from './components/Container'
+import Footer from './components/Footer'
 import MainContact from './Pages/MainContact'
-import Testimony from './Pages/Testimony.jsx'
+import Testimony from './Pages/Testimony'
 import MainBlog from './Pages/MainBlog'
 import MainEvents from './Pages/MainEvents'
+import EventPreview from './Pages/EventPreview'
 import { Route, Link, Routes } from 'react-router-dom'
 
 
@@ -12,7 +14,7 @@ function App() {
 
   return (
     <>
-     <div>
+     <div className="font-other">
       <Header/>
       <Routes>
        <Route path="/" element={<Container/>}/>
@@ -20,6 +22,7 @@ function App() {
        <Route path="/testimony" element={<Testimony/>}/>
        <Route path="/blog" element={<MainBlog/>}/>
        <Route path="/event" element={<MainEvents/>}/>
+       <Route path="/eventpreview" element={<EventPreview/>}/>
 
       </Routes>
       <Footer/>

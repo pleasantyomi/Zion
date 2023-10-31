@@ -15,7 +15,7 @@ const Blog = () => {
     return ( 
         <div>
             <div className="block w-10/12 mx-auto">
-                <h1 className="text-[2rem] font-semibold text-blue-900 text-center uppercase pb-6">Blogs</h1>
+                <h1 className="font-secondary text-[2rem] font-semibold text-blue-900 text-center uppercase pb-6">Blogs</h1>
                 <div className="grid lg:grid-cols-3 mobile:gap-5 laptop:gap-10">
                 {blogs.map((blog) => (
                     <div key={blog.id}>

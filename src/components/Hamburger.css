@@ -12,4 +12,23 @@
     top: 4rem;
     padding-top: 40px;
     z-index: 10;
+    animation-name: slidein;
+    animation-duration: 10s;
+}
+
+@keyframe slidein{
+    from{
+        margin-left: 200px;
+        /* width: 300%; */
+    }
+
+    50% {
+        marginh-left: 100px;
+        /* width: 150%; */
+    }
+
+    to {
+        margin-left: 0px;
+        /* width: 100% */
+    }
 }

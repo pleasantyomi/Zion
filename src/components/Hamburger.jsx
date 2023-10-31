@@ -8,14 +8,38 @@ const Hamburger = () => {
         alert("Coming soon!")
         isOpen(false)
     }
+    const genericHamburgerLine = `h-[2px] w-8 my-1 rounded-full bg-black transition ease transform duration-300`;
 
     return ( 
         <div className="">
-                <div className="grid gap-2" onClick={() => isOpen(prev => !prev)}>
+            <button className="flex flex-col h-12 w-12  justify-center items-center group" onClick={() => isOpen(!open)}
+    >
+      <div
+        className={`${genericHamburgerLine} ${
+          open
+            ? "rotate-45 translate-y-3 opacity-50 group-hover:opacity-100"
+            : "opacity-50 group-hover:opacity-100"
+        }`}
+      />
+      <div
+        className={`${genericHamburgerLine} ${
+          open ? "opacity-0" : "opacity-50 group-hover:opacity-100"
+        }`}
+      />
+      <div
+        className={`${genericHamburgerLine} ${
+          open
+            ? "-rotate-45 -translate-y-3 opacity-50 group-hover:opacity-100"
+            : "opacity-50 group-hover:opacity-100"
+        }`}
+      />
+    </button>
+
+                {/* <div className="grid gap-2" onClick={() => isOpen(prev => !prev)}>
                     <div  className="bg-black w-8 h-[2px]"></div>
                     <div  className="bg-black w-8 h-[2px]"></div>
                     <div  className="bg-black w-8 h-[2px]"></div>
-                </div>
+                </div> */}
 
                 <div className={open? "ShowHamburger" : "HideHamburger"}>
                     <div className="bg-white grid gap-4 text-center font-semibold text-gray-600">
