@@ -8,6 +8,7 @@ import MainBlog from './Pages/MainBlog'
 import MainEvents from './Pages/MainEvents'
 import EventPreview from './Pages/EventPreview'
 import { Route, Link, Routes } from 'react-router-dom'
+import ScrollToTop from './ScrollToTop'
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
   return (
     <>
      <div className="font-other">
+      <ScrollToTop/>
       <Header/>
       <Routes>
        <Route path="/" element={<Container/>}/>
