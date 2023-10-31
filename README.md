@@ -1,8 +1,12 @@
 # Zion Assembly Church Of God, Nigeria
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The need for this new website design arose as a result of a change in the church's logo and also a change in my development stack. The previous version was written mainly with HTML, CSS and vanilla JavaScript. But currently, I'm writing this new design mainly with reactjs and tailwindcss. 
 
-Currently, two official plugins are available:
+The new design has fhe following features:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Homepage
+- Testimony page 
+- Contact page 
+- An events page 
+- A blog page 
+
