@@ -1,5 +1,6 @@
 /* eslint-disable react/no-unknown-property */
 import image from '../../assets/Background.webp'
+import { Link } from 'react-router-dom'
 
 const About = () => {
     return ( 
@@ -35,10 +36,10 @@ const About = () => {
                     <p className="text-gray-400">Learn the Bible enhance your wisdom, give you boldness about your faith. </p>
                 </div>
             </div>
-            <button className="text-white bg-blue-900 font-semibold lg:px-5 px-7 py-2 rounded-lg mt-5">Learn more</button>
+            <Link to ="/about">
+               <button className="text-white bg-blue-900 font-semibold lg:px-5 px-7 py-2 rounded-lg mt-5">Learn more</button>
+            </Link>
             </div>
-
-
         </div>
 
      );

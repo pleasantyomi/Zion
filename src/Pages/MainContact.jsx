@@ -5,7 +5,7 @@ import logo from '../assets/whitelogo.png'
 
 const MainContact = () =>{
     return(
-        <div className="pt-32 lg:pb-10">
+        <div className="pt-[5.5rem] lg:pb-10">
             <div className="laptop:w-10/12 h-[90vh] w-full mx-auto bg-white laptop:shadow-sm laptop:shadow-gray-400 rounded-xl">
                 <div className="flex">
                     <div className="flex-shrink-0 flex-nowrap relative hidden lg:block bg-contact bg-black bg-opacity-80 bg-blend-darken w-4/12 h-[90vh] bg-cover bg-right rounded-l-xl">

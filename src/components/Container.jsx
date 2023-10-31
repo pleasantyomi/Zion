@@ -8,6 +8,7 @@ import Giving from '../Pages/Homepage/Giving'
 import Testimony from '../Pages/Homepage/Testimony'
 import Worship from '../Pages/Homepage/Worship';
 import Meetings from '../Pages/Homepage/Meetings'
+import Meet from '../Pages/Homepage/Meet';
 
 const Container = () => {
     return ( 
@@ -15,6 +16,7 @@ const Container = () => {
             <Hero/>
             <About/>
             <Branch/>
+            <Meet/>
             <Events/>
             <Contact/>
             <Blog/>

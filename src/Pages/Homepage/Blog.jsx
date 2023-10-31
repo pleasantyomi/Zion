@@ -4,6 +4,7 @@ import { useState } from "react";
 import cross from '../../assets/cross.webp'
 import dove from '../../assets/dove.webp'
 import pray from '../../assets/pray.webp'
+import { Link } from 'react-router-dom'
 
 
 const Blog = () => {
@@ -35,7 +36,10 @@ const Blog = () => {
 
                 </div>
 
-                <button className=" mt-10 block bg-blue-900 text-white font-semibold mobile:py-2 laptop:py-3 w-9/12  laptop:w-3/12 rounded-xl mx-auto ">Read  more blog posts</button>
+                <Link to ="/blog">
+                   <button className=" mt-10 block bg-blue-900 text-white font-semibold mobile:py-2 laptop:py-3 w-9/12  laptop:w-3/12 rounded-xl mx-auto ">Read  more blog posts</button>
+                </Link>
+
                
             </div>
 

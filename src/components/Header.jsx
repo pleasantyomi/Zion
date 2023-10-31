@@ -14,7 +14,7 @@ const Header = () => {
 
                 <div className="hidden lg:flex items-center gap-6 font-semibold text-sm text-gray-600">
                     <Link to="/">HOME</Link>
-                    <a>WHO WE ARE</a>
+                    <Link to="/about">WHO WE ARE</Link>
                     <a>WHAT WE DO</a>
                     <Link to="/blog">BLOG</Link>
                     <Link to="/event">EVENTS</Link>

@@ -9,6 +9,7 @@ import MainEvents from './Pages/MainEvents'
 import EventPreview from './Pages/EventPreview'
 import { Route, Link, Routes } from 'react-router-dom'
 import ScrollToTop from './ScrollToTop'
+import WhoWeAre from './Pages/WhoWeAre'
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
        <Route path="/blog" element={<MainBlog/>}/>
        <Route path="/event" element={<MainEvents/>}/>
        <Route path="/eventpreview" element={<EventPreview/>}/>
+       <Route path="/about" element={<WhoWeAre/>}/>
 
       </Routes>
       <Footer/>

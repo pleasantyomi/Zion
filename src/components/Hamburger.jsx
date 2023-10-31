@@ -12,8 +12,7 @@ const Hamburger = () => {
 
     return ( 
         <div className="">
-            <button className="flex flex-col h-12 w-12  justify-center items-center group" onClick={() => isOpen(!open)}
-    >
+            <button className="flex flex-col h-12 w-12  justify-center items-center group" onClick={() => isOpen(!open)}>
       <div
         className={`${genericHamburgerLine} ${
           open
@@ -44,7 +43,7 @@ const Hamburger = () => {
                 <div className={open? "ShowHamburger" : "HideHamburger"}>
                     <div className="bg-white grid gap-4 text-center font-semibold text-gray-600">
                        <Link to="/" onClick={()=>isOpen(false)}>HOME</Link>
-                       <a onClick={()=>isOpen(false)}>WHO WE ARE</a>
+                       <Link to ="/about" onClick={()=>isOpen(false)}>WHO WE ARE</Link>
                        <a onClick={()=>isOpen(false)}>WHAT WE DO</a>
                        <Link to="/blog" onClick={()=>isOpen(false)}>BLOG</Link>
                        <Link to ="/event" onClick={()=>isOpen(false)}>EVENTS</Link>

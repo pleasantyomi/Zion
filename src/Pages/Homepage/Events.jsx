@@ -2,6 +2,7 @@
 /* eslint-disable react/no-unknown-property */
 import { useState } from "react";
 import convention from '../../assets/convention.jpg'
+import { Link } from 'react-router-dom'
 
 
 const Events = () => {
@@ -45,7 +46,10 @@ const Events = () => {
 
                 </div>
 
-                <button className=" mt-10 block bg-blue-900 text-white font-semibold mobile:py-2 laptop:py-3 mobile:w-9/12 laptop:w-3/12 rounded-xl mx-auto ">Explore more events</button>
+                <Link to="/event">
+                    <button className=" mt-10 block bg-blue-900 text-white font-semibold mobile:py-2 laptop:py-3 mobile:w-9/12 laptop:w-3/12 rounded-xl mx-auto ">Explore more events</button>
+                </Link>
+
                
             </div>
 
