@@ -37,7 +37,7 @@ const MainEvents = () => {
                         {events.map((eve) => (
                             <div key={eve.id}>
                                 <div>
-                                    <div onClick={previewEvents} className="relative bg-white shadow-md rounded-xl mobile:w-full  tablet:w-9/12 laptop:w-full mx-auto  h-[22rem]  flex-nowrap flex-shrink-0">
+                                    <div onClick={previewEvents} className="cursor-pointer relative bg-white shadow-md rounded-xl mobile:w-full  tablet:w-9/12 laptop:w-full mx-auto  h-[22rem]  flex-nowrap flex-shrink-0">
                                         <div>
                                            <img className="rounded-xl w-full h-[22rem] object-cover overflow-y-hidden" src={eve.image}/>
                                         </div>
@@ -77,7 +77,7 @@ const MainEvents = () => {
             <div className="pt-[5.5rem] pb-20">
             {events.map((prev)=>(
                 <div key={prev.id} className="lg:grid grid-cols-2">
-                    <div className="relative h-[100vh] mb-32x">
+                    <div className="relative h-[100vh] mb-[15rem]">
                       <img className="lg:h-[100vh] lg:w-[50vw] object-cover" src={prev.image}/>
                       <div>
                             <button onClick ={listEvents} className="absolute top-[1rem] left-[1rem] bg-black text-white font-semibold text-lg py-2 px-4 rounded-lg">Back</button>
