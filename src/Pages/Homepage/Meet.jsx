@@ -15,10 +15,10 @@ const Meet = () => {
                         <img className="rounded-xl" src={image}/>
                     </div>
 
-                    <div className="grid lg:gap-4 gap-2">
-                        <img className="rounded-xl w-full h-full object-cover" src={image}/>
+                    <div className="grid grid-rows-2 lg:gap-4 gap-2">
+                        <img className="rounded-xl w-full h-full object-cover lg:row-span-2 row-span-3" src={image}/>
                         <Link to ="/leaders">
-                            <button className="w-full bg-blue-900 rounded-xl text-white font-semibold lg:text-xl text-xs h-full">Meet the Leaders</button>
+                            <button className="w-full bg-blue-900 rounded-xl text-white font-semibold lg:text-xl text-xs lg:h-[5rem] h-[3rem]">Meet the Leaders</button>
                         </Link>
                     </div>
 
