@@ -18,7 +18,7 @@ const Hero = () => {
             </div>
 
             <Link to = "/about" className="relative pb-[5rem]">
-               <button className="absolute left-[50%] -translate-x-1/2 text-white text-lg font-semibold py-3 px-10 rounded-xl bg-blue-900">Learn more</button>
+               <button className="absolute left-[50%] -translate-x-1/2 text-white text-lg font-semibold py-3 w-3/12 lg:w-2/12 rounded-xl bg-blue-900">Learn more</button>
             </Link>
 
 
