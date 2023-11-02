@@ -16,7 +16,7 @@ const Meet = () => {
                     </div>
 
                     <div className="grid grid-rows-2 lg:gap-4 gap-2">
-                        <img className="rounded-xl w-full h-full object-cover lg:row-span-2 row-span-3" src={image}/>
+                        <img className="rounded-xl w-full lg:h-full h-fit object-cover lg:row-span-2 row-span-3" src={image}/>
                         <Link to ="/leaders">
                             <button className="w-full bg-blue-900 rounded-xl text-white font-semibold lg:text-xl text-xs lg:h-[5rem] h-[3rem] row-span-1">Meet the Leaders</button>
                         </Link>
