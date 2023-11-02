@@ -7,9 +7,32 @@ import { Link } from 'react-router-dom'
 
 const Events = () => {
     const [events, setEvents] = useState([
-        {title: '15th National Convention', date: 'Wed. 8th - Sun. 10th November,2023 ', theme: 'By his stripes', location: 'Church Auditorium', image: convention, id: 1},
-        {title: '15th National Convention', date: 'Wed. 8th - Sun. 10th November,2023 ', theme: 'By his stripes', location: 'Church Auditorium', image: convention, id: 2},
-        {title: '15th National Convention', date: 'Wed. 8th - Sun. 10th November,2023 ', theme: 'By his stripes', location: 'Church Auditorium', image: convention, id: 3},
+        {
+            title: '15th National Convention',
+            date: 'Wed. 8th - Sun. 10th November,2023 ', 
+            theme: 'By his stripes', 
+            location: 'Church Auditorium', 
+            image: convention, 
+            id: 1
+        },
+
+        {
+            title: '15th National Convention', 
+            date: 'Wed. 8th - Sun. 10th November,2023 ', 
+            theme: 'By his stripes', 
+            location: 'Church Auditorium', 
+            image: convention, 
+            id: 2 
+        },
+
+        {
+            title: '15th National Convention', 
+            date: 'Wed. 8th - Sun. 10th November,2023 ', 
+            theme: 'By his stripes', 
+            location: 'Church Auditorium', 
+            image: convention, 
+            id: 3
+        },
     ])
     return ( 
         <div>
@@ -46,7 +69,7 @@ const Events = () => {
 
                 </div>
 
-                <Link to="/event">
+                <Link to="/events">
                     <button className=" mt-10 block bg-blue-900 text-white font-semibold mobile:py-2 laptop:py-3 mobile:w-9/12 laptop:w-3/12 rounded-xl mx-auto ">Explore more events</button>
                 </Link>
 

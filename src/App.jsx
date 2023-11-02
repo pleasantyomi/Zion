@@ -6,7 +6,6 @@ import MainContact from './Pages/MainContact'
 import Testimony from './Pages/Testimony'
 import MainBlog from './Pages/MainBlog'
 import MainEvents from './Pages/MainEvents'
-import EventPreview from './Pages/EventPreview'
 import { Route, Link, Routes } from 'react-router-dom'
 import ScrollToTop from './ScrollToTop'
 import WhoWeAre from './Pages/WhoWeAre'
@@ -25,8 +24,7 @@ function App() {
        <Route path="/contact" element={<MainContact/>}/>
        <Route path="/testimony" element={<Testimony/>}/>
        <Route path="/blog" element={<MainBlog/>}/>
-       <Route path="/event" element={<MainEvents/>}/>
-       <Route path="/eventpreview" element={<EventPreview/>}/>
+       <Route path="/events" element={<MainEvents/>}/>
        <Route path="/about" element={<WhoWeAre/>}/>
        <Route path="/leaders" element={<Leaders/>}/>
 

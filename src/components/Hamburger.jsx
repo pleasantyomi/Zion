@@ -46,7 +46,7 @@ const Hamburger = () => {
                        <Link to ="/about" onClick={()=>isOpen(false)}>WHO WE ARE</Link>
                        <a onClick={()=>isOpen(false)}>WHAT WE DO</a>
                        <Link to="/blog" onClick={()=>isOpen(false)}>BLOG</Link>
-                       <Link to ="/event" onClick={()=>isOpen(false)}>EVENTS</Link>
+                       <Link to ="/events" onClick={()=>isOpen(false)}>EVENTS</Link>
                        <Link to ="/contact" onClick={()=>isOpen(false)}>CONTACT US</Link>
                        <button onClick={online} className="block bg-blue-900 text-white transition-all font-semibold w-7/12 py-2 rounded-xl hover:bg-transparent hover:border-[1px] hover:border-blue-900  hover:text-blue-900 ml-auto mr-auto">ONLINE GIVING</button>
                     </div>

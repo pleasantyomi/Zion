@@ -34,7 +34,7 @@ const Header = () => {
                     
                     <Link to ="/">WHAT WE DO</Link>
                     <Link to="/blog">BLOG</Link>
-                    <Link to="/event">EVENTS</Link>
+                    <Link to="/events">EVENTS</Link>
                     <Link to="/contact">CONTACT US</Link>
                 </div>
 
