@@ -16,6 +16,10 @@
     animation-duration: 10s;
 }
 
+.showdropdown{
+    display:block;
+}
+
 @keyframe slidein{
     from{
         margin-left: 200px;

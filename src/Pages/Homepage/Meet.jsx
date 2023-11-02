@@ -27,5 +27,4 @@ const Meet = () => {
         </div>
      );
 }
- 
 export default Meet;    

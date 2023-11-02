@@ -1,10 +1,17 @@
 import logo from '../assets/logonew.jpg'
 import Hamburger from './Hamburger'
 import { Link } from 'react-router-dom'
+import { useState } from 'react'
+import './Hamburger.css'
+
 const Header = () => {
+    const [dropdown, openDropdown] = useState(false)
+
     const online = () =>{
         alert("Coming soon!")
     }
+
+    
     return ( 
         <div className="bg-white fixed w-[100%] z-10 py-[1rem] lg:px-12 px-5">
             <div className="flex justify-between items-center font-primary">
@@ -14,7 +21,17 @@ const Header = () => {
 
                 <div className="hidden lg:flex items-center gap-6 font-semibold text-sm text-gray-600">
                     <Link to="/">HOME</Link>
-                    <Link to="/about">WHO WE ARE</Link>
+                    <div className="">
+                        <a onMouseOver={()=> openDropdown(prev => !prev)}  className="cursor-pointer" >WHO WE ARE</a>
+                        <div className={dropdown? "showdropdown" : "HideHamburger"}>
+                            <div className="absolute grid gap-3  mt-3 bg-white shadow-sm shadow-gray-600 rounded-lg py-5 px-3">
+                               <Link to ="/about" onClick={()=> openDropdown(prev => !prev)}>About us</Link>
+                               <Link to ="/" onClick={()=> openDropdown(prev => !prev)}>Abstract of faith</Link>
+                               <Link to ="/leaders" onClick={()=> openDropdown(prev => !prev)}>Staffs</Link>
+                            </div> 
+                        </div>
+                    </div>
+                    
                     <a>WHAT WE DO</a>
                     <Link to="/blog">BLOG</Link>
                     <Link to="/event">EVENTS</Link>
@@ -26,7 +43,7 @@ const Header = () => {
                 </div>
 
                 <div className="lg:hidden block">
-                    <Hamburger/>
+                    <Hamburger/> 
                 </div>
             </div>
         </div>

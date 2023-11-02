@@ -5,11 +5,11 @@ import { useState } from 'react';
 const Leaders = () => {
     const [nationalLeaders, setNationalLeaders] =useState([
         {name: 'Bsh. Yomi-Adekunle', position: 'National Overseer', email: 'adekunleyomi@gmail.com', phone: '+2347033672742', image: image, id:1},
-        {name: 'Bsh. Yomi-Adekunle', position: 'National Overseer', email: 'adekunleyomi@gmail.com', phone: '+2347033672742', image: image, id:1},
-        {name: 'Bsh. Yomi-Adekunle', position: 'National Overseer', email: 'adekunleyomi@gmail.com', phone: '+2347033672742', image: image, id:1},
-        {name: 'Bsh. Yomi-Adekunle', position: 'National Overseer', email: 'adekunleyomi@gmail.com', phone: '+2347033672742', image: image, id:1},
-        {name: 'Bsh. Yomi-Adekunle', position: 'National Overseer', email: 'adekunleyomi@gmail.com', phone: '+2347033672742', image: image, id:1},
-        {name: 'Bsh. Yomi-Adekunle', position: 'National Overseer', email: 'adekunleyomi@gmail.com', phone: '+2347033672742', image: image, id:1},
+        {name: 'Bsh. Yomi-Adekunle', position: 'National Overseer', email: 'adekunleyomi@gmail.com', phone: '+2347033672742', image: image, id:2},
+        {name: 'Bsh. Yomi-Adekunle', position: 'National Overseer', email: 'adekunleyomi@gmail.com', phone: '+2347033672742', image: image, id:3},
+        {name: 'Bsh. Yomi-Adekunle', position: 'National Overseer', email: 'adekunleyomi@gmail.com', phone: '+2347033672742', image: image, id:4},
+        {name: 'Bsh. Yomi-Adekunle', position: 'National Overseer', email: 'adekunleyomi@gmail.com', phone: '+2347033672742', image: image, id:5},
+        {name: 'Bsh. Yomi-Adekunle', position: 'National Overseer', email: 'adekunleyomi@gmail.com', phone: '+2347033672742', image: image, id:6},
     ])
 
 

@@ -14,16 +14,16 @@ const MainEvents = () => {
         <div>
             <div className="block w-10/12 mx-auto pt-[5.5rem] lg:pt-[7rem] pb-20">
                 <h1 className="fonr-secondary text-[2rem] font-semibold text-blue-900 text-center uppercase pb-8">events</h1>
-                <div className="grid lg:grid-cols-3 mobile:gap-5 laptop:gap-10">
+                <div className="grid lg:grid-cols-3 mobile:gap-5 tablet:gap-5 laptop:gap-10">
                 {events.map((eve) => (
                     <div key={eve.id}>
                         <div>
-                            <div className="relative bg-white shadow-md rounded-xl mobile:w-full  tablet:w-9/12 laptop:w-full mx-auto max-sm:lg:full h-[22rem]  flex-nowrap flex-shrink-0">
+                            <div className="relative bg-white shadow-md rounded-xl mobile:w-full  tablet:w-9/12 laptop:w-full mx-auto  h-[22rem]  flex-nowrap flex-shrink-0">
                                 <div>
-                                   <img className="rounded-xl w-full lg:h-[22rem] object-cover overflow-y-hidden" src={eve.image}/>
+                                   <img className="rounded-xl w-full h-[22rem] object-cover overflow-y-hidden" src={eve.image}/>
                                 </div>
 
-                                <div className="absolute grid bg-white w-full lg:h-[11rem] h-[11rem] sm:h-[15vh] bottom-0 rounded-b-xl lg:px-5 px-2 py-6">
+                                <div className="absolute grid bg-white w-full lg:h-[11rem] h-[11rem]  bottom-0 rounded-b-xl lg:px-5 px-2 py-6">
                                     <h1 className="font-semibold text-2xl text-gray-600">{eve.theme}</h1>
                                     <p className="text-gray-400 text-lg">{eve.title}</p>
                                     <div className="flex items-center gap-2 text-gray-400">
