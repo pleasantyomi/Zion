@@ -26,7 +26,7 @@ const Header = () => {
                         <div className={dropdown? "showdropdown" : "HideHamburger"}>
                             <div className="absolute grid gap-3  mt-3 bg-white shadow-sm shadow-gray-600 rounded-lg py-5 px-3">
                                <Link to ="/about" onClick={()=> openDropdown(prev => !prev)}>About us</Link>
-                               <Link to ="/" onClick={()=> openDropdown(prev => !prev)}>Abstract of faith</Link>
+                               <Link to ="https://zionassemblychurchofgod.com/abstract-of-faith/" onClick={()=> openDropdown(prev => !prev)}>Abstract of faith</Link>
                                <Link to ="/leaders" onClick={()=> openDropdown(prev => !prev)}>Staffs</Link>
                             </div> 
                         </div>

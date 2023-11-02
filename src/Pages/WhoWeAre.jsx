@@ -18,7 +18,7 @@ const WhoWeAre = () =>{
 
                             Zion Assembly has further obligated itself to publish and to proclaim the full gospel into all the world in obedience to Christ’s commission to the church (Matthew 28:19).<br/><br/>
 
-                            Learn more about the teachings of Zion Assembly Church of God by reading our <Link className="text-blue-900" to="">Abstract of Faith.</Link>
+                            Learn more about the teachings of Zion Assembly Church of God by reading our <Link className="text-blue-900" to="https://zionassemblychurchofgod.com/abstract-of-faith/">Abstract of Faith.</Link>
                         </p>
 
                     </div>
