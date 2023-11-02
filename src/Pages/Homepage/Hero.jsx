@@ -17,9 +17,10 @@ const Hero = () => {
                 <p className="font-other text-center text-gray-600 lg:w-7/12 w-10/12 ml-auto mr-auto text-base lg:text-lg">We are a Spirit-filled body of believers who have covenanted themselves together with God to accept and obey the teachings of Christ and His apostles.</p>
             </div>
 
-            <Link to = "/about">
-               <button className="block ml-auto mr-auto text-white text-lg font-semibold py-3 px-10 rounded-xl bg-blue-900">Learn more</button>
+            <Link to = "/about" className="relative pb-[5rem]">
+               <button className="absolute left-[50%] -translate-x-1/2 text-white text-lg font-semibold py-3 px-10 rounded-xl bg-blue-900">Learn more</button>
             </Link>
+
 
 
         </div>

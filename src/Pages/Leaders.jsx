@@ -12,6 +12,15 @@ const Leaders = () => {
         {name: 'Bsh. Yomi-Adekunle', position: 'National Overseer', email: 'adekunleyomi@gmail.com', phone: '+2347033672742', image: image, id:6},
     ])
 
+    const [branchleaders, setBranchLeaders] =useState([
+        {name: 'Bsh. Yomi-Adekunle', position: 'National Overseer', email: 'adekunleyomi@gmail.com', phone: '+2347033672742', image: image, id:1},
+        {name: 'Bsh. Yomi-Adekunle', position: 'National Overseer', email: 'adekunleyomi@gmail.com', phone: '+2347033672742', image: image, id:2},
+        {name: 'Bsh. Yomi-Adekunle', position: 'National Overseer', email: 'adekunleyomi@gmail.com', phone: '+2347033672742', image: image, id:3},
+        {name: 'Bsh. Yomi-Adekunle', position: 'National Overseer', email: 'adekunleyomi@gmail.com', phone: '+2347033672742', image: image, id:4},
+        {name: 'Bsh. Yomi-Adekunle', position: 'National Overseer', email: 'adekunleyomi@gmail.com', phone: '+2347033672742', image: image, id:5},
+        {name: 'Bsh. Yomi-Adekunle', position: 'National Overseer', email: 'adekunleyomi@gmail.com', phone: '+2347033672742', image: image, id:6},
+    ])
+
 
     return ( 
         <div className="lg:pt-[7rem] pt-[5.5rem] pb-20">
