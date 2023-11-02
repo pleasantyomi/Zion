@@ -3,12 +3,12 @@ import { Link } from 'react-router-dom'
 
 const WhoWeAre = () =>{
     return(
-        <div className="pt-[5.5rem]">
+        <div className="pt-[5.5rem] lg:pt-[7rem]">
             <div>
                 {/* <h1 className="font-semibold text-blue-900 text-[2rem] lg:text-[2.5rem] font-secondary text-center">Who We Are</h1> */}
                 <div className="lg:flex lg:items-center lg:w-10/12 w-11/12 mx-auto">
                     <div className="lg:pr-20">
-                        <h1 className="font-tetiary font-semibold text-blue-900 text-[1.8rem]">About us</h1>
+                        <h1 className="font-tetiary font-semibold text-blue-900 text-[1.8rem] pb-3">About us</h1>
                         <p className="text-justify pb-10 lg:pb-0">
                             Zion Assembly Church of God is a Spirit-filled body of believers who have covenanted themselves together with God to accept and obey the teachings of Christ and His apostles (Exodus 19:3-6; John 14:6, 8, 14; Acts 2:42; Ephesians 5:24-32). This commitment is firm, even in this present time of apostasy, when so many are “falling away” and “[departing] from the faith” (2 Thessalonians 2:1-12; 1 Timothy 4:1-3; 2 Peter 2; 3:1-12; Jude 3-19). <br/><br/>
 

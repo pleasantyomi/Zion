@@ -12,7 +12,7 @@ const MainEvents = () => {
     ])
     return ( 
         <div>
-            <div className="block w-10/12 mx-auto pt-[5.5rem] pb-20">
+            <div className="block w-10/12 mx-auto pt-[5.5rem] lg:pt-[7rem] pb-20">
                 <h1 className="fonr-secondary text-[2rem] font-semibold text-blue-900 text-center uppercase pb-8">events</h1>
                 <div className="grid lg:grid-cols-3 mobile:gap-5 laptop:gap-10">
                 {events.map((eve) => (

@@ -10,6 +10,7 @@ import EventPreview from './Pages/EventPreview'
 import { Route, Link, Routes } from 'react-router-dom'
 import ScrollToTop from './ScrollToTop'
 import WhoWeAre from './Pages/WhoWeAre'
+import Leaders from './Pages/Leaders'
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
        <Route path="/event" element={<MainEvents/>}/>
        <Route path="/eventpreview" element={<EventPreview/>}/>
        <Route path="/about" element={<WhoWeAre/>}/>
+       <Route path="/leaders" element={<Leaders/>}/>
 
       </Routes>
       <Footer/>
