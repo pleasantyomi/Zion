@@ -74,10 +74,10 @@ const MainEvents = () => {
 
         else if ( Page === 1){
              return(
-            <div className="pt-[5.5rem] pb-20">
+            <div className="pt-[5.5rem] pb-20 lg:pb-5">
             {events.map((prev)=>(
                 <div key={prev.id} className="lg:grid grid-cols-2">
-                    <div className="relative h-[100vh] mb-56">
+                    <div className="relative h-[100vh] mb-56 lg:mb-0">
                       <img className="lg:h-[100vh] lg:w-[50vw] object-cover" src={prev.image}/>
                       <div>
                             <button onClick ={listEvents} className="absolute top-[1rem] left-[1rem] bg-black text-white font-semibold text-lg py-2 px-4 rounded-lg">Back</button>

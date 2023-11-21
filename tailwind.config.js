@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
@@ -28,8 +29,16 @@ export default {
         'laptop' : '1024px',
         'mobile' : '375px'
       },
+
+      keyframes: {
+        slideIn:{
+
+        }
+      }
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwindcss-animatecss'),
+  ],
 }
 

@@ -1,16 +1,19 @@
 /* eslint-disable react/no-unknown-property */
+import { Link } from 'react-router-dom'
+import { Heart } from 'lucide-react'
 
 const Branch = () => {
     return ( 
-      <div className="bg-VeryPaleBlue w-full py-20 mt-20 mb-10">
+      <div className="w-full py-20 mt-20 mb-10 bg-VeryPaleBlue">
         <div className="grid gap-4">
-            <div className="relative bg-blue-900 w-14 h-14 rounded-full mx-auto">
-                <svg className=" w-8 h-8 text-white absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" >
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
-                </svg>
+            <div className="relative flex w-20 h-20 mx-auto bg-blue-900 rounded-full">
+                <span className="absolute inline-flex w-full h-full rounded-full opacity-75 animate-ping bg-sky-600"></span>
+                <Heart className="absolute top-[50%] left-[50%] text-white -translate-x-1/2 -translate-y-1/2 w-[2rem] h-auto"/>
             </div>
-            <p className="text-center text-gray-600 lg:text-2xl text-xl font-semibold lg:w-6/12 w-10/12 ml-auto mr-auto">“Pray! And listen to God! You can do this alone, but find somebody to do it with you”</p>
-            <button className="text-white bg-blue-900 font-semibold lg:text-lg py-2 px-8 block ml-auto mr-auto rounded-xl">Find a branch near you</button>
+            <p className="w-10/12 ml-auto mr-auto text-xl font-semibold text-center text-gray-600 lg:text-2xl lg:w-6/12">“Pray! And listen to God! You can do this alone, but find somebody to do it with you”</p>
+            <Link to ="https://www.google.com/maps/place/Zion+Assembly+Church+Of+God,+(ZACOG)/@7.4088178,3.9736126,17z/data=!3m1!4b1!4m6!3m5!1s0x103993ae7cad6c15:0xebb032f5384209bf!8m2!3d7.4088125!4d3.9761875!16s%2Fg%2F11snyp776b?entry=ttu">
+              <button className="block px-8 py-2 ml-auto mr-auto font-semibold text-white bg-blue-900 lg:text-lg rounded-xl">Find a branch near you</button>
+            </Link>
         </div>
 
       </div>

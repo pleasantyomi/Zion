@@ -1,6 +1,7 @@
 import {useState} from "react";
 import './Hamburger.css'
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion"
 
 const Hamburger = () => {
     const [open, isOpen] = useState(false)
@@ -9,6 +10,8 @@ const Hamburger = () => {
         isOpen(false)
     }
     const genericHamburgerLine = `h-[2px] w-8 my-1 rounded-full bg-black transition ease transform duration-300`;
+
+    const [accordion, setAccordion] = useState(false)
 
     return ( 
         <div className="">
@@ -41,15 +44,22 @@ const Hamburger = () => {
                 </div> */}
 
                 <div className={open? "ShowHamburger" : "HideHamburger"}>
-                    <div className="bg-white grid gap-4 text-center font-semibold text-gray-600">
+                    <motion.div initial={{ width: 0}} animate={{ width: "100%" }} className="bg-white grid gap-4 text-center font-semibold text-gray-600">
                        <Link to="/" onClick={()=>isOpen(false)}>HOME</Link>
-                       <Link to ="/about" onClick={()=>isOpen(false)}>WHO WE ARE</Link>
+                       <a onClick={()=>setAccordion(prev => !prev)}>WHO WE ARE</a>
+                       <div className={accordion? "showAccordion" : "HideHamburger"}>
+                        <div className="grid">
+                          <Link to ="/about" onClick={()=>isOpen(false)}>About us</Link>
+                          <Link to ="/" onClick={()=>isOpen(false)}>Abstract of faith</Link>
+                          <Link to ="/leaders" onClick={()=>isOpen(false)}>Staffs</Link>
+                        </div>
+                      </div>
                        <a onClick={()=>isOpen(false)}>WHAT WE DO</a>
                        <Link to="/blog" onClick={()=>isOpen(false)}>BLOG</Link>
                        <Link to ="/events" onClick={()=>isOpen(false)}>EVENTS</Link>
                        <Link to ="/contact" onClick={()=>isOpen(false)}>CONTACT US</Link>
-                       <button onClick={online} className="block bg-blue-900 text-white transition-all font-semibold w-7/12 py-2 rounded-xl hover:bg-transparent hover:border-[1px] hover:border-blue-900  hover:text-blue-900 ml-auto mr-auto">ONLINE GIVING</button>
-                    </div>
+                       <button onClick={online} className="block bg-blue-900 text-white transition-all font-semibold w-7/12 py-2 rounded-xl hover:bg-transparent hover:border-[1px] hover:border-blue-900  hover:text-blue-900 mx-auto">ONLINE GIVING</button>
+                    </motion.div>
                 </div>
         </div>
      );
