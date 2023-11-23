@@ -10,20 +10,29 @@ import { X } from 'lucide-react'
 
 const Blog = () => {
     const [blogs, setBlogs] = useState([
-        {topic: '15th National Convention', writer: 'Wed. 8th - Sun. 10th November,2023 ', text: 'By his stripes',  image: dove, id: 1},
-        {topic: '15th National Convention', writer: 'Wed. 8th - Sun. 10th November,2023 ', text: 'By his stripes',  image: cross, id: 2},
-        {topic: '15th National Convention', writer: 'Wed. 8th - Sun. 10th November,2023 ', text: 'By his stripes',  image: pray, id: 3},
+        {
+            topic: 'The lord is good',
+            writer: 'Grace ', 
+            text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+            image: dove,
+            id: 1
+        },
+        {
+            topic: 'Pray for the church', 
+            writer: 'Emmanuel ',
+            text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+            image: cross,
+            id: 2
+        },
+        {
+            topic: 'Pay your tithes',
+            writer: 'Tolu', 
+            text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',  
+            image: pray, 
+            id: 3
+        },
     ])
 
-    const[page, setPage] = useState(0)
-    const readBlogs = () =>{
-        setPage(page + 1);
-    }
-    const close = () =>{
-        setPage(page - 1);
-    }
-    const pageDisplay = () =>{
-        if (page === 0){
             return(
                 <div>
                 <div className="block w-10/12 mx-auto">
@@ -32,15 +41,22 @@ const Blog = () => {
                     {blogs.map((blog) => (
                         <div key={blog.id}>
                             <div>
-                                <div className="relative bg-white shadow-md shadow-gray-400 rounded-xl mobile:w-full  tablet:w-9/12 laptop:w-full mx-auto max-sm:lg:full lg:h-[35rem] h-[30rem] tablet:h-[30rem] flex-nowrap flex-shrink-0 pt-5">
+                                <div className="relative bg-white shadow-md shadow-gray-400 rounded-xl mobile:w-full  tablet:w-9/12 laptop:w-full mx-auto max-sm:lg:full lg:h-[35rem] h-[30rem] tablet:h-[30rem] flex-nowrap flex-shrink-0 pt-5 overflow-y-hidden">
                                     <div>
                                        <img className="object-cover w-10/12 mx-auto overflow-y-hidden rounded-xl h-2/6" src={blog.image}/>
                                     </div>
-                                    <div className="overflow-x-hidden">
+                                    <div className="w-10/12 mx-auto mt-8 overflow-x-hidden">
+                                        <h1 className="grid font-semibold text-gray-600">
+                                            <span className="text-md">Topic: {blog.topic} </span>
+                                            <span className="text-sm font-thin">Written by {blog.writer} </span>
+                                        </h1>
+                                        <p className="mt-1 overflow-x-hidden text-justify">
+                                            {blog.text} 
+                                        </p>
 
                                     </div>
     
-                                    <div className="absolute bottom-0 grid w-full py-3 blur rounded-b-xl">
+                                    <div className="absolute bottom-0 grid w-full h-[2rem]  bg-white bg-opacity-80 blur rounded-b-xl">
                                         {/* <button className="font-semibold text-white text-md" onClick={readBlogs}>Continue reading...</button> */}
                                     </div>
                                 </div>
@@ -61,23 +77,6 @@ const Blog = () => {
             </div>
 
             );
-        }
-        // else if (page === 1){
-        //     return(
-        //         <div>
-        //             <button onClick={close} className="block px-5 py-2 mx-auto text-lg font-semibold text-white bg-blue-900 rounded-lg">
-        //                 Back to blogs
-        //             </button>
-                    
-        //         </div>
-        //     )
-        // }
-    }
-    return ( 
-        <div>
-           {pageDisplay()}
-        </div>
-     );
 }
  
 export default Blog;
