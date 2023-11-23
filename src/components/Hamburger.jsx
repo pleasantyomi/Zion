@@ -15,7 +15,7 @@ const Hamburger = () => {
 
     return ( 
         <div className="">
-            <button className="flex flex-col h-12 w-12  justify-center items-center group" onClick={() => isOpen(!open)}>
+            <button className="flex flex-col items-center justify-center w-12 h-12 group" onClick={() => isOpen(!open)}>
       <div
         className={`${genericHamburgerLine} ${
           open
@@ -44,14 +44,15 @@ const Hamburger = () => {
                 </div> */}
 
                 <div className={open? "ShowHamburger" : "HideHamburger"}>
-                    <motion.div initial={{ width: 0}} animate={{ width: "100%" }} className="bg-white grid gap-4 text-center font-semibold text-gray-600">
+                    <motion.div initial={{ width: 0}} animate={{ width: "100%" }} className="grid gap-4 font-semibold text-center text-gray-600 bg-white">
                        <Link to="/" onClick={()=>isOpen(false)}>HOME</Link>
+                       <Link to="/leaders" onClick={()=>isOpen(false)}>STAFFS</Link>
                        <a onClick={()=>setAccordion(prev => !prev)}>WHO WE ARE</a>
                        <div className={accordion? "showAccordion" : "HideHamburger"}>
                         <div className="grid">
                           <Link to ="/about" onClick={()=>isOpen(false)}>About us</Link>
                           <Link to ="/" onClick={()=>isOpen(false)}>Abstract of faith</Link>
-                          <Link to ="/leaders" onClick={()=>isOpen(false)}>Staffs</Link>
+                          {/* <Link to ="/leaders" onClick={()=>isOpen(false)}>Staffs</Link> */}
                         </div>
                       </div>
                        <a onClick={()=>isOpen(false)}>WHAT WE DO</a>

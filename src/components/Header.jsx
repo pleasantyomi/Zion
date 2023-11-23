@@ -20,6 +20,7 @@ const Header = () => {
 
                 <div className="items-center hidden gap-6 text-sm font-semibold text-gray-600 lg:flex">
                     <Link to="/">HOME</Link>
+                    <Link to="/leaders">STAFFS</Link>
                     <div className="">
                         <span onClick={()=> openDropdown(prev => !prev)}  className="flex items-center gap-1 cursor-pointer" >
                             <span>WHO WE ARE</span>
@@ -31,7 +32,7 @@ const Header = () => {
                             <div className="absolute grid gap-3 px-3 py-5 mt-3 bg-white rounded-lg shadow-sm shadow-gray-600">
                                <Link to ="/about" onClick={()=> openDropdown(prev => !prev)}>About us</Link>
                                <Link to ="https://zionassemblychurchofgod.com/abstract-of-faith/" onClick={()=> openDropdown(prev => !prev)}>Abstract of faith</Link>
-                               <Link to ="/leaders" onClick={()=> openDropdown(prev => !prev)}>Staffs</Link>
+                               {/* <Link to ="/leaders" onClick={()=> openDropdown(prev => !prev)}>Staffs</Link> */}
                             </div> 
                         </div>
                     </div>
