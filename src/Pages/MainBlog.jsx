@@ -6,6 +6,7 @@ import dove from '../assets/dove.webp'
 import pray from '../assets/pray.webp'
 import { Link } from 'react-router-dom'
 import { X } from 'lucide-react'
+import ScrollToTop from "../ScrollToTop";
 
 const MainBlog = () => {
     const [blogs, setBlogs] = useState([
@@ -81,9 +82,9 @@ const MainBlog = () => {
                     <div className="w-11/12 mx-auto lg:w-10/12">
                         <div className="text-gray-600">
                             {/* Display details of the current blog */}
-                            <h1 className="grid pb-1 text-2xl font-bold leading-none">
+                            <h1 className="grid pb-2 text-2xl font-bold leading-none">
                                 {currentBlog.topic}
-                                <span className="text-lg font-light">written by {currentBlog.writer}</span>
+                                <span className="text-lg font-thin">written by {currentBlog.writer}</span>
                             </h1>
                             <p className="text-base text-justify">{currentBlog.text}</p>
                         </div>
