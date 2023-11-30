@@ -3,6 +3,7 @@ import image from '../../assets/Background.webp'
 import { Link } from 'react-router-dom'
 import { Heart } from 'lucide-react'
 import { BookOpen } from 'lucide-react'
+import Button from '../../components/Button'
 
 const About = () => {
     return ( 
@@ -35,7 +36,8 @@ const About = () => {
                 </div>
             </div>
             <Link to ="/about">
-               <button className="py-2 mt-5 font-semibold text-white bg-blue-900 rounded-lg lg:px-5 px-7">Learn more</button>
+                <Button text="Learn more" className="py-2 mt-5 lg:px-5 px-7"/>
+               {/* <button className="mt-5 font-semibold text-white bg-blue-900 rounded-lg ">Learn more</button> */}
             </Link>
             </div>
         </div>

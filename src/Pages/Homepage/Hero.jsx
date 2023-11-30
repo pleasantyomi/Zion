@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-vars */
 import web from '../../assets/metrix1.png'
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
+import Button from '../../components/Button'
 
 const Hero = () => {
     return ( 
@@ -16,12 +17,9 @@ const Hero = () => {
             <div>
                 <p className="w-10/12 ml-auto mr-auto text-base text-center text-gray-600 font-other lg:w-7/12 lg:text-lg">We are a Spirit-filled body of believers who have covenanted themselves together with God to accept and obey the teachings of Christ and His apostles.</p>
             </div>
-
-            <Link to = "/about" className="">
-                <button className="block px-10 py-3 mx-auto text-lg font-semibold leading-6 text-white bg-blue-900 border-2 border-transparent shadow-sm - rounded-xl hover:bg-transparent hover:text-blue-900 hover:border-blue-900 focus:outline-none">
-                   Learn more
-                </button>
-               {/* <button className="block px-10 py-3 mx-auto text-lg font-semibold text-white bg-blue-900 rounded-xl">Learn more</button> */}
+            <Link to="/about" className="w-auto mx-auto z-[1000]">
+                <Button className="px-10 py-3 text-white " text="Learn More"/>
+                {/* <button className="block mx-auto text-lg font-semibold text-white bg-blue-900 rounded-xl">Learn more</button> */}
             </Link>
 
 

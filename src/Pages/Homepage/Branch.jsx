@@ -1,6 +1,7 @@
 /* eslint-disable react/no-unknown-property */
 import { Link } from 'react-router-dom'
 import { Heart } from 'lucide-react'
+import Button from '../../components/Button';
 
 const Branch = () => {
     return ( 
@@ -12,7 +13,8 @@ const Branch = () => {
             </div>
             <p className="w-10/12 ml-auto mr-auto text-xl font-semibold text-center text-gray-600 lg:text-2xl lg:w-6/12">“Pray! And listen to God! You can do this alone, but find somebody to do it with you”</p>
             <Link to ="https://www.google.com/maps/place/Zion+Assembly+Church+Of+God,+(ZACOG)/@7.4088178,3.9736126,17z/data=!3m1!4b1!4m6!3m5!1s0x103993ae7cad6c15:0xebb032f5384209bf!8m2!3d7.4088125!4d3.9761875!16s%2Fg%2F11snyp776b?entry=ttu">
-              <button className="block px-8 py-2 ml-auto mr-auto font-semibold text-white bg-blue-900 lg:text-lg rounded-xl">Find a branch near you</button>
+              <Button text="Find a branch near you" className="block px-8 py-2 ml-auto mr-auto"/>
+              {/* <button className="font-semibold text-white bg-blue-900  lg:text-lg rounded-xl">Find a branch near you</button> */}
             </Link>
         </div>
 

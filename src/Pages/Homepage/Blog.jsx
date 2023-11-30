@@ -6,6 +6,7 @@ import dove from '../../assets/dove.webp'
 import pray from '../../assets/pray.webp'
 import { Link } from 'react-router-dom'
 import { X } from 'lucide-react'
+import Button from '../../components/Button'
 
 
 const Blog = () => {
