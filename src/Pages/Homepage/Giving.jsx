@@ -1,5 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 /* eslint-disable no-unused-vars */
+import Button from '../../components/Button.jsx'
 
 const Giving = () => {
     const online = () =>{
@@ -15,7 +16,8 @@ const Giving = () => {
                     </div>
 
                     <div>
-                        <button onClick={online} className="block bg-blue-900 text-white font-semibold text-md py-3 px-14 rounded-xl shadow-sm laptop:mx-0 mx-auto mt-5 laptop:mt-0">Pay Now</button>
+                        <Button text="Pay Now" className="block text-white font-semibold text-md py-3 px-14 shadow-sm laptop:mx-0 mx-auto mt-5 laptop:mt-0" onclick={online}/>
+                        {/*  <button onClick={online} className="bg-blue-900 rounded-xl ">Pay Now</button> */}
                     </div>
                 </div>
 

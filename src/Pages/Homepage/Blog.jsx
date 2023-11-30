@@ -8,7 +8,6 @@ import { Link } from 'react-router-dom'
 import { X } from 'lucide-react'
 import Button from '../../components/Button'
 
-
 const Blog = () => {
     const [blogs, setBlogs] = useState([
         {
@@ -68,7 +67,8 @@ const Blog = () => {
                     </div>
     
                     <Link to ="/blog">
-                       <button className="block w-9/12 mx-auto mt-10 font-semibold text-white bg-blue-900 mobile:py-2 laptop:py-3 laptop:w-3/12 rounded-xl">Read  more blog posts</button>
+                        <Button text="Read  more blog posts" className="block w-9/12 mx-auto mt-10 font-semibold text-white  mobile:py-2 laptop:py-3 laptop:w-3/12"/>
+                       {/* <button className=" bg-blue-900 rounded-xl">Read  more blog posts</button> */}
                     </Link>
     
                    
