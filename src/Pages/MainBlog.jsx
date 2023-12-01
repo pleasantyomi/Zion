@@ -13,7 +13,10 @@ const MainBlog = () => {
         {
             topic: 'Spiritual Growth',
             writer: 'Evang. Adetayo',
-            text: '',
+            text: [
+                "Growth in its physical context connotes progressing from one state to another. As a believer, spiritual growth in its real sense is not just about how long you've lived being a Christian, how much you can fast, how melodious your voice sounds, how fervent you can blast in tongues, the number of years you've been a worker in God's vineyard, how gifted you are, etc.  The Criteria to measure your spiritual growth include:",
+                "1. LOVE: How your life as a believer is, is it worthy of emulation? The Bible says the greatest of all commandments is LOVE, He that loveth not knoweth not God; for God is love. (1 John 4:8) and the Bible says in Genesis 1:27 that we are God's image, and the personality of God is Love which means we being a replica of God ought to love as well. In mathematics, if x=2 it means whenever we see x we use 2 in that case wherever we find a Christian we are to find Love. You say you love your neighbor but you keep doing what hurts your neighbor. Consider 1 John  4:20 if you can't express the Genuine love to the one you can see how much more the Invisible God.",
+            ],
             image: dove,
             id: 1
         },
