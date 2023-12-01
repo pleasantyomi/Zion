@@ -1,9 +1,46 @@
 /* eslint-disable react/no-unknown-property */
 import logo from '../assets/whitelogo.png'
+import { useRef } from "react"
+import emailjs from '@emailjs/browser'; 
 
 
+// const options = {method: 'GET'};
+//     fetch('https://emailvalidation.abstractapi.com/v1', options)
+//       .then(response => response.json())
+//       .then(response => console.log(response))
+//       .catch(err => console.error(err));
+
+
+// function httpGetAsync(url, callback) {
+//     const xmlHttp = new XMLHttpRequest();
+//     xmlHttp.onreadystatechange = function() {
+//         if (xmlHttp.readyState === 4 && xmlHttp.status === 200)
+//         callback(xmlHttp.responseText);
+//     }
+//     xmlHttp.open("GET", url, true); // true for asynchronous
+//     xmlHttp.send(null);
+// }
+
+// const url = "https://emailvalidation.abstractapi.com/v1/?api_key=154df721011e45b5911ba6d2807a3277&email=pleasantyomi@gmail.com"
+
+// httpGetAsync(url)
 
 const MainContact = () =>{
+    
+const form = useRef();
+
+const sendEmail = (e) => {
+  e.preventDefault();
+
+  emailjs.sendForm('service_in1wpfo', 'template_grf4n3x', form.current, 'PeRkfj8XfMon1azpQ')
+    .then((result) => {
+        alert(result.text);
+    }, (error) => {
+        alert(error.text);
+    });
+};
+  
+
     return(
         <div className="pt-[5.5rem] lg:pt-[7rem] lg:pb-10">
             <div className="laptop:w-10/12 h-[90vh] w-full mx-auto bg-white laptop:shadow-sm laptop:shadow-gray-400 rounded-xl">
@@ -23,8 +60,8 @@ const MainContact = () =>{
                             <span className="text-black">GET IN <span className="font-semibold">TOUCH</span></span>
                             <span className="text-base">24/7 We will answer your questions and problems.</span>   
                         </h1>
-
-                        <form id="emailForm" className="mt-5 w-full">
+ 
+                        <form ref={form} onSubmit={sendEmail}  className="mt-5 w-full">
                            <div className="flex justify-between gap-4">
                                <div className="flex items-center outline outline-[1px] outline-gray-400 w-full p-2 rounded-md hover:ring focus:ring-green-200 transition ease-in-out duration-400">
                                     <div>
@@ -34,7 +71,7 @@ const MainContact = () =>{
                                     </div>
     
                                     <div className="w-full relative">
-                                       <input type="text" placeholder="First name" className="outline-none border-0 pl-1 py-2 w-full" id="firstName"/>
+                                       <input type="text" placeholder="First name"name="user_name"  className="outline-none border-0 pl-1 py-2 w-full"/>
                                     </div>
                                 </div>
 
@@ -46,7 +83,7 @@ const MainContact = () =>{
                                     </div>
     
                                     <div className="w-full relative">
-                                       <input type="text" placeholder="Last name" className="outline-none border-0 pl-1 py-2 w-full" id="lastName"/>
+                                       <input type="text" placeholder="Last name" name="user_name" className="outline-none border-0 pl-1 py-2 w-full"/>
                                     </div>
                                 </div>
                             </div>
@@ -59,7 +96,7 @@ const MainContact = () =>{
                                 </div>
 
                                 <div className="w-full relative rounded-md">
-                                   <input type="email" placeholder="Email" name="email" required className="outline-none border-0 py-2 font-lg w-full pl-2  bg-transparent" id="email"/>
+                                   <input type="email" placeholder="Email" name="user_email" required className="outline-none border-0 py-2 font-lg w-full pl-2  bg-transparent" id="email"/>
                                 </div>
                             </div>
                     
@@ -79,8 +116,8 @@ const MainContact = () =>{
                                <textarea  type="text" placeholder="Message" name="message" className=" pt-2 align w-full h-40 outline outline-[1px] outline-gray-500 px-2  rounded-md hover:ring focus:ring-green-200 transition ease-in-out duration-400" id="message"></textarea>
                             </div>
 
-                            <button type="button" id="submitBtn" className="block bg-blue-900 w-full py-3 text-white text-center text-lg font-semibold mt-5 rounded-md">Send Message</button>
-                        </form>
+                            <input type="submit" value="send Message" id="submitBtn" className="block bg-blue-900 w-full py-3 text-white text-center text-lg font-semibold mt-5 rounded-md"/>      
+                       </form>
                     </div>
 
 

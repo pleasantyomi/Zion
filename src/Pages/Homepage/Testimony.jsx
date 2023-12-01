@@ -15,7 +15,7 @@ const Testimony = () => {
                     </div>
 
                     <Link to ="/testimony">
-                        <Button text="Click here" className="block py-3 mx-auto mt-5 font-semibold text-white text-md px-14 shadow-sm laptop:mx-0 laptop:mt-0"/>
+                        <Button text="Click here" className="block py-3 mx-auto mt-5 font-semibold text-white text-md px-14 shadow-sm"/>
                         {/* <button className=" bg-blue-900  rounded-xl ">Click here</button> */}
                     </Link>
                 </div>
