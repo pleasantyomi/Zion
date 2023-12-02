@@ -109,7 +109,7 @@ const MainEvents = () => {
                         <h1 className="text-blue-900 font-semibold text-[1.5rem] pb-2">{prev.subtitle}</h1>
                         {prev.text && Array.isArray(prev.text) && (
                             prev.text.map((paragraph, index) => (
-                                <div key={index} className="mb-4">
+                                <div key={index} className="mb-4 text-gray-600">
                                     {paragraph}
                                 </div>
                             ))
