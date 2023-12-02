@@ -48,20 +48,20 @@ const sendEmail = (e) => {
                     <div className="flex-shrink-0 flex-nowrap relative hidden lg:block bg-contact bg-black bg-opacity-80 bg-blend-darken w-4/12 h-[90vh] bg-cover bg-right rounded-l-xl">
                         <div className="absolute bottom-0 left-[1rem] flex justify-center items-center gap-1 pb-5">
                             <img className="w-auto h-12" src={logo}/>
-                            <p className="grid leading-tight font-semibold text-white">
+                            <p className="grid font-semibold leading-tight text-white">
                               <span>ZION ASSEMBLY</span>
                               <span>CHURCH OF GOD, NIGERIA</span>
                             </p>
                         </div>
                     </div>
 
-                    <div className="px-10 py-5 w-full">
-                        <h1 className="font-secandary grid text-gray-600 text-xl leading-tight">
+                    <div className="w-full px-10 py-5">
+                        <h1 className="grid text-xl leading-tight text-gray-600 font-secandary">
                             <span className="text-black">GET IN <span className="font-semibold">TOUCH</span></span>
                             <span className="text-base">24/7 We will answer your questions and problems.</span>   
                         </h1>
  
-                        <form ref={form} onSubmit={sendEmail}  className="mt-5 w-full">
+                        <form ref={form} onSubmit={sendEmail}  className="w-full mt-5">
                            <div className="flex justify-between gap-4">
                                <div className="flex items-center outline outline-[1px] outline-gray-400 w-full p-2 rounded-md hover:ring focus:ring-green-200 transition ease-in-out duration-400">
                                     <div>
@@ -70,8 +70,8 @@ const sendEmail = (e) => {
                                         </svg>
                                     </div>
     
-                                    <div className="w-full relative">
-                                       <input type="text" placeholder="First name"name="user_name"  className="outline-none border-0 pl-1 py-2 w-full"/>
+                                    <div className="relative w-full">
+                                       <input type="text" placeholder="First name"name="user_name" required  className="w-full py-2 pl-1 border-0 outline-none"/>
                                     </div>
                                 </div>
 
@@ -82,8 +82,8 @@ const sendEmail = (e) => {
                                         </svg>
                                     </div>
     
-                                    <div className="w-full relative">
-                                       <input type="text" placeholder="Last name" name="user_name" className="outline-none border-0 pl-1 py-2 w-full"/>
+                                    <div className="relative w-full">
+                                       <input type="text" placeholder="Last name" name="user_name" required className="w-full py-2 pl-1 border-0 outline-none"/>
                                     </div>
                                 </div>
                             </div>
@@ -95,8 +95,8 @@ const sendEmail = (e) => {
                                     </svg>
                                 </div>
 
-                                <div className="w-full relative rounded-md">
-                                   <input type="email" placeholder="Email" name="user_email" required className="outline-none border-0 py-2 font-lg w-full pl-2  bg-transparent" id="email"/>
+                                <div className="relative w-full rounded-md">
+                                   <input type="email" placeholder="Email" name="user_email" required className="w-full py-2 pl-2 bg-transparent border-0 outline-none font-lg" id="email"/>
                                 </div>
                             </div>
                     
@@ -107,16 +107,16 @@ const sendEmail = (e) => {
                                     </svg>
                                 </div>
 
-                                <div className="w-full relative">
-                                   <input type="tel" placeholder="Phone" name="contact" required className="outline-none border-0 py-2 font-lg min-w-full pl-2 bg-transparent" id="phone"/>
+                                <div className="relative w-full">
+                                   <input type="tel" placeholder="Phone" name="contact" required className="min-w-full py-2 pl-2 bg-transparent border-0 outline-none font-lg" id="phone"/>
                                 </div>
                             </div>
 
-                            <div className="mt-5  ">
+                            <div className="mt-5 ">
                                <textarea  type="text" placeholder="Message" name="message" className=" pt-2 align w-full h-40 outline outline-[1px] outline-gray-500 px-2  rounded-md hover:ring focus:ring-green-200 transition ease-in-out duration-400" id="message"></textarea>
                             </div>
 
-                            <input type="submit" value="send Message" id="submitBtn" className="block bg-blue-900 w-full py-3 text-white text-center text-lg font-semibold mt-5 rounded-md"/>      
+                            <input type="submit" value="send Message" id="submitBtn" className="block w-full py-3 mt-5 text-lg font-semibold text-center text-white bg-blue-900 rounded-md"/>      
                        </form>
                     </div>
 
