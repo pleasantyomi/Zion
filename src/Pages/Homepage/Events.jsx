@@ -72,7 +72,7 @@ const Events = () => {
 
                 <Link to="/events">
                     <Button text="Explore more events" className="block mx-auto mt-10 mobile:py-2 laptop:py-3 mobile:w-9/12 laptop:w-3/12"/>
-                    {/* <button className="font-semibold text-white bg-blue-900  rounded-xl"></button> */}
+                    {/* <button className="font-semibold text-white bg-blue-900 rounded-xl"></button> */}
                 </Link>
 
                
